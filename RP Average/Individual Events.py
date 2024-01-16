@@ -11,7 +11,6 @@ parameters = {
 }
 
 event_key = input("Enter event key (ex: 2022flwp)\n")
-
 event_matches_response = requests.get("https://www.thebluealliance.com/api/v3/event/" + event_key + "/matches/keys",
                                       params=parameters)
 matches = json.loads(event_matches_response.content)
