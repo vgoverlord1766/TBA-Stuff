@@ -43,7 +43,7 @@ for match in matches:
         if match["score_breakdown"][alliance]["endGameTotalStagePoints"] >= 10 and match["score_breakdown"][alliance]["endGameOnStagePoints"] >= 6:
             earned_ensemble_rp += 1
             earned = True
-        if match["score_breakdown"][alliance]["ensembleBonusAchieved"] and match["score_breakdown"][other_alliance]["g424Penalty"] and not earned:
+        if match["score_breakdown"][alliance]["ensembleBonusAchieved"] and match["score_breakdown"][other_alliance]["g424Penalty"]:
             fouled_ensemble_rp += 1
             earned = True
         if not earned:
