@@ -64,7 +64,7 @@ parameters = {
 
 print("Enter a 2024 week # or any year's event code (e.g. \"2023mabos\")")
 print("To change the year that has its events by week stored, change the \"weeks_year\" variable and enter reset")
-print("There is a bug in the TBA API events sometimes do not come back with the right week. Try putting in the"
+print("There is a bug in the TBA API where events sometimes do not come back with the right week. Try putting in the"
       " event code if it doesn't show up under its week or enter \"other\" to show unsorted events.")
 
 user_input = input()
