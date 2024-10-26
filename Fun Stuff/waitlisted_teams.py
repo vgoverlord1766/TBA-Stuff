@@ -20,7 +20,7 @@ for team in teams:
     team_event_responses = requests.get("https://www.thebluealliance.com/api/v3/team/" + team + "/events/2025/keys",
                                    params=parameters)
     team_event = json.loads(team_event_responses.content)
-    if len(team_event) is not 1:
+    if len(team_event) is not 2:
         teams_with_one_event.append(team)
 
     i += 1
